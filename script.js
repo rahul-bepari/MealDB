@@ -32,3 +32,67 @@ function connect(){
     });
 
 }
+
+function showAll(){
+    show(allMeals.slice(5));
+    document.getElementById("showAllBtn").classList.add("d-none");
+}
+
+function show(meals){
+
+    var displayArea = document.getElementById("displayArea");
+    for (var i = 0; i < meals.length; i++){
+
+        var newDiv = document.createElement("div");
+        newDiv.classList.add("col-12", "col-sm-6", "col-lg-4", "col-xl-3");
+
+
+        newDiv.innerHTML =` <div class="card h-100 shadow-sm innerStyle">
+                            <img src="${meals[i].strMealThumb}" class="card-img-top" alt="${meals[i].strMeal}">
+                            <div class="card-body">
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        `;
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
