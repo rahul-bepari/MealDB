@@ -24,3 +24,24 @@ main {
     transform: translateY(-4px);
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
 }
+
+
+.innerStyle img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.meal-instructions {
+    font-size: 0.9rem;
+}
+
+#searchTerm:focus {
+    box-shadow: none;
+    border-color: #dc3545;
+}
+
+#showAllBtn {
+    padding: 0.6rem 2.5rem;
+    font-weight: 500;
+}
