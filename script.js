@@ -49,34 +49,21 @@ function show(meals){
 
         newDiv.innerHTML =` <div class="card h-100 shadow-sm innerStyle">
                             <img src="${meals[i].strMealThumb}" class="card-img-top" alt="${meals[i].strMeal}">
-                            <div class="card-body">
+                                <div class="card-body">
+                                <h5 class="card-title">${meals[i].strMeal}</h5>
+                                <p class="text-muted mb-2">Meal ID: ${meals[i].idMeal}</p>
+                                <p class="meal-instructions">${meals[i].strInstructions.substring(0, 150)}...</p>
 
 
 
 
-                            </div>
-
-
-
-
-
-
-
+                                 </div>
 
                             </div>
-
-        
-        
-        
-        
-        
-        
-        
-        
         
         `;
 
-
+        displayArea.appendChild(newDiv);
 
 
 
