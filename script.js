@@ -58,6 +58,14 @@ function show(meals){
                     <p class="mb-1"><strong>Meal Name:</strong> ${meals[i].strMeal}</p>
                     <p class="mb-2"><strong>Meal Title:</strong> ${meals[i].strMeal}</p>
                     <p class="meal-instructions"><strong>Cooking Instructions:</strong> ${meals[i].strInstructions.substring(0, 150)}...</p>
+                    <button class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#full-${meals[i].idMeal}">
+                        View Full Instructions
+                    </button>
+                    <div class="collapse mt-2" id="full-${meals[i].idMeal}">
+                        <div class="card card-body small">
+                            ${meals[i].strInstructions}
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
